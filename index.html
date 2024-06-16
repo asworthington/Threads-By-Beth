@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
+    <title>Threads By Beth</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Threads By Beth</a></div>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="testimonial.html">Testimonials</a></li>
+            </ul>
+            <a href="https://forms.gle/NVmqUzSPbXVcJrT19" class="action_btn">Book With Me</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="testimonial.html">Testimonials</a></li>
+            <li><a href="https://forms.gle/NVmqUzSPbXVcJrT19" class="action_btn">Book With Me</a></li>
+        </div>
+    </header>
+
+    <main>
+        <section class="main_content">
+            <div class="text_content">
+                <h1>Simple, Seamless, <br>Sophisticated</h1>
+                <p>Welcome to Threads by Beth, where I bring your visions to life 
+                    through my new location. I would be honored to take care of all
+                    your alterations and custom sewing or embroidery needs. With a 
+                    passion for precision and an eye for detail, I am dedicated to 
+                    making your special moments even more extraordinary.</p>
+                <a href="https://forms.gle/NVmqUzSPbXVcJrT19" class="action_btn">Get Started</a>
+            </div>
+            <img src="images/website_headshot.jpg" class="main_image">
+        </section>
+    </main>
+
+    <div class="footer_container">
+        <div class="footer">
+            <div class="footer_heading footer_1">
+                <h2>Location</h2>
+                <h4>1960 Oak Ridge Turnpike,</h4>
+                <h4>Oak Ridge, TN 37830</h4>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=1960+Oak+Ridge+Turnpike+Oak+Ridge+TN+37830" class="directions">Get Directions</a>
+            </div>
+            <div class="footer_heading footer_2">
+                <h2>Hours of Operation</h2>
+                <h4>Monday: 10:00 am - 6:00 pm</h4>
+                <h4>Tuesday: 10:00 am - 6:00 pm</h4>
+                <h4>Wednesday: 10:00 am - 6:00 pm</h4>
+                <h4>Thursday: 10:00 am - 6:00 pm</h4>
+                <h4>Friday: 10:00 am - 6:00 pm</h4>
+                <h4>Saturday: 10:00 am - 3:00 pm</h4>
+                <h4>Sunday: Closed</h4>
+            </div>
+            <div class="footer_heading footer_3">
+                <h2>Contact Info</h2>
+                <h4>(865) 315-8197</h4>
+                <h4>threadsbybeth13@gmail.com</h4>
+                <div class="social_icons">
+                    <a href="https://www.facebook.com/essentials.by.beth1"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/essentials_by_beth"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>
